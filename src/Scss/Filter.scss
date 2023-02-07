@@ -1,0 +1,31 @@
+.filter-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 15vh;
+  color: var(--second-color);
+  
+  }
+  .filter-container form {
+    display: flex;
+    gap: 40px;
+  
+  }
+  .filter-main {
+    cursor: pointer;
+  }
+  .dropdown {
+  backdrop-filter: blur(7px) saturate(181%);
+  -webkit-backdrop-filter: blur(7px) saturate(181%);
+  background-color: rgba(17, 25, 40, 0.5);
+  border-radius: 12px;
+  color: var(--second-color);
+  }
+  .dropdown-options {
+    background-color: red($color: #000000);
+  }
+  options {
+    background-color: red($color: #000000);
+
+  }
+  

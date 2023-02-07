@@ -1,0 +1,101 @@
+.totalpanier-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: 50px;
+  backdrop-filter: blur(7px) saturate(181%);
+  -webkit-backdrop-filter: blur(7px) saturate(181%);
+  background-color: rgba(17, 25, 40, 0.5);
+  border-radius: 12px;
+  border: 1px solid white;
+  height: 83%;
+  width: 35%;
+  margin-left: 50px;
+
+  .panier-description {
+    width: 90%;
+    height: 50%;
+    // box-shadow:  0px 0px 10px 4px #0d0f12;
+    border-radius: 10px;
+
+    .title-totalpanier {
+      font-size: 0.5em;
+      justify-content: center;
+      display: flex;
+      color: white;
+      margin-bottom: 40px;
+      text-shadow: 2px 2px 2px #0d0f12;
+      letter-spacing: 0.15rem;
+    }
+    .totalpanier {
+      font-size: 0.5em;
+      justify-content: center;
+      display: flex;
+      color: white;
+      text-shadow: 2px 2px 2px #0d0f12;
+      letter-spacing: 0.15rem;
+
+      .bourse {
+        width: 30px;
+        margin-left: 10px;
+      }
+    }
+  }
+  .btn-totalcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-family: "";
+
+    .btn-totalpanier {
+      backdrop-filter: blur(7px) saturate(181%);
+      -webkit-backdrop-filter: blur(7px) saturate(181%);
+      background-color: rgba(17, 25, 40, 0.5);
+      border-radius: 12px;
+      border: 1px solid white;
+      padding: 10px;
+      width: 300px;
+      color: white;
+      letter-spacing: 0.15rem;
+      text-shadow: 2px 2px 2px #0d0f12;
+      margin-top: 20px;
+      font-family: "medieval";
+      font-size: 1rem;
+      margin-bottom: 1rem;
+
+      &:active {
+        box-shadow: inset -1px -1px #fff, inset 1px 1px #292929,
+          inset -2px -2px #ffffff, inset 2px 2px rgb(158, 158, 158);
+      }
+    }
+    .btn-cancelpanier {
+      backdrop-filter: blur(7px) saturate(181%);
+      -webkit-backdrop-filter: blur(7px) saturate(181%);
+      background-color: rgba(17, 25, 40, 0.5);
+      border-radius: 12px;
+      border: 1px solid white;
+      padding: 10px;
+      width: 300px;
+      color: white;
+      text-shadow: 2px 2px 2px #0d0f12;
+      letter-spacing: 0.15rem;
+      font-family: "medieval";
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      &:active {
+        box-shadow: inset -1px -1px #fff, inset 1px 1px #292929,
+          inset -2px -2px #ffffff, inset 2px 2px rgb(158, 158, 158);
+      }
+    }
+  }
+}
+
+.ecus {
+  font-family: "medieval";
+  padding: 1.5rem;
+  border: 2px dotted white;
+}

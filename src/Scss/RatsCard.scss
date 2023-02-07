@@ -1,0 +1,145 @@
+.ratsCard-texte{
+    transform: rotateY(180deg);
+    text-shadow: 3px 3px 2px #0d0f12, 0 0 0.2em #0d0f12;
+    color:var(--second-color);
+    font-family: "medieval";
+}
+
+.ratsCard-container {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 400px;
+  transition: transform 1.5s;
+  perspective: 800px;
+  &:hover {
+  transition: transform 1.5s;
+    transform: rotateY(180deg);
+  }
+}
+
+.ratsCard-body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1.5s;
+  transform-style: preserve-3d;
+  &:hover {
+  transition: transform 1.5s;
+    transform: rotateY(180deg);
+  }
+}
+.rats-front,
+.ratsCard-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(7px) saturate(181%);
+  -webkit-backdrop-filter: blur(7px) saturate(181%);
+  background-color: rgba(17, 25, 40, 0.5);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.rats-front {
+  text-shadow: 3px 3px 2px #0d0f12, 0 0 0.2em #0d0f12;
+  color:var(--second-color);
+  font-family: "medieval";
+  margin: 0;
+  
+}
+.ratsCard-name {
+  font-size: 1.8rem;
+  margin: 0%;
+}
+.ratsCard-prix {
+font-size: 1.2rem;
+margin: 0%;
+}
+
+.ratsCard-back {
+  transform: rotateY(180deg);
+}
+
+.rats-img {
+  width: 80%;
+  height: 60%;
+  border-radius: 10px;
+  margin-bottom: 2vh;
+}
+.ratsCard-desc {
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  position: relative;
+  top: -25px;
+  padding: 10px;
+  
+}
+.ratsCard-cara {
+  font-size: 1rem;
+  line-height:5px ;
+  padding-left: 1vh;
+  letter-spacing: 2px;
+  }
+  
+
+.filter-button {
+  backdrop-filter: blur(7px) saturate(181%);
+  -webkit-backdrop-filter: blur(7px) saturate(181%);
+  background-color: rgba(17, 25, 40, 0.5);
+  border-radius: 12px;
+  color: var(--second-color);
+  border-color: var(--second-color);
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  font-family: "medieval";
+  font-size: 18px;
+  letter-spacing: 0.1rem;
+  // height: 27px;
+}
+label {
+  font-size: 24px;
+  font-family: "medieval";
+  text-shadow: 2px 2px 2px #0d0f12;
+  letter-spacing: 0.15rem;
+}
+.dropdown {
+  height: 20px;
+  margin-top: 4px;
+  width: 25%;
+}
+.form {
+  display: flex;
+  align-items: center;
+}
+.add-button {
+  display: block;
+  margin: auto;
+  width: 30%;
+  font-family: "medieval";
+  font-weight: bold;
+  color: var(--main-color);
+  letter-spacing: 2px;
+  font-size: 20px;
+  border-radius: 12px;
+}
+.added-button {
+  display: block;
+  margin: auto;
+  width: 30%;
+  font-family: "medieval";
+  font-weight: bold;
+  color: var(--secondary-color);
+  letter-spacing: 2px;
+  font-size: 20px;
+  border-radius: 12px;
+  background-color: var(--main-color);
+}

@@ -1,0 +1,60 @@
+@import "./App.scss";
+@import "./scss/Home.scss";
+@import "./scss/Header.scss";
+@import "./scss/Header2.scss";
+@import "./scss/Title.scss";
+@import "./scss/RatsCard.scss";
+@import "./scss/Rats.scss";
+@import "./scss/Catalogue.scss";
+@import "./scss/Filter.scss";
+@import "./scss/Parallax.scss";
+@import "./scss/Panier.scss";
+@import "./scss/TotalSelection.scss";
+@import "./scss/PanierSelection.scss";
+@import "./scss/PanierSelectionMiniature.scss";
+@import "./scss/ModalPaiement.scss";
+@import "./scss/Map.scss";
+
+@font-face {
+  font-family: "goudy";
+  src: url("./assets/fonts/GoudyMedieval-Alternate.ttf");
+}
+
+@font-face {
+  font-family: "kawoszeh";
+  src: url("./assets/fonts/kawoszeh.ttf");
+}
+
+@font-face {
+  font-family: "medieval";
+  src: url("./assets/fonts/MedievalSharp-Book.ttf");
+}
+
+:root {
+  --main-color: #0d0f12;
+  --second-color: #e0e0e0;
+  --third-color: #28c342;
+}
+
+// * {
+//   box-sizing: border-box;
+// }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+}
+
+button {
+  cursor: pointer;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

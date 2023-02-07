@@ -1,0 +1,101 @@
+.test {
+  position: absolute;
+  display: grid;
+  border: solid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 1000px;
+  height: 760px;
+  z-index: 4;
+  opacity: 0;
+  text-align: center;
+}
+.cellule {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: red;
+}
+.blocMap .map {
+  position: absolute;
+  width: 1000px;
+}
+.blocMap .mapCercle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  clip-path: circle(50% at 50% 50%);
+  animation-name: cercle;
+  animation-duration: 2s;
+}
+
+.ratListe {
+  flex-direction: column;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(7px) saturate(181%);
+  -webkit-backdrop-filter: blur(7px) saturate(181%);
+  background-color: rgba(17, 25, 40, 0.5);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  padding: 20px;
+  gap: 20px;
+  width: 10%;
+  position: absolute;
+  right: 600px;
+}
+.ratListe li {
+  list-style: none;
+  margin: 0;
+  clip-path: circle(50%,50%,50%);
+  clip-path: circle(50% at 50% 50%);
+}
+.ratListe img {
+  width: 150px;
+  box-shadow: 0px 0px 10px 4px #000;
+}
+
+.nombreMorts {
+  color: white;
+  position: absolute;
+  right: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.nombreMorts  span{
+font-size: 40px;
+
+}
+.mapScreen-global {
+  background: linear-gradient(-45deg, #e0e0e0, black, #0d0f12, #28c342);
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+  height: 115vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.section{
+  color: transparent;
+}

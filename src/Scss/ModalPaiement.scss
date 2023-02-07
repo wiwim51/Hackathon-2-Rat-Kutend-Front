@@ -1,0 +1,89 @@
+.modalpay-container {
+  position: absolute;
+  right: 0;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  width: 35%;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  z-index: 100;
+  top: 10vh;
+}
+
+.modalPaiement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 30px;
+
+  .modaltitle {
+    color: white;
+    margin-top: 1rem;
+    font-size: 35px;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-top: 25px;
+  }
+
+  .descmodal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.modalPaiement input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 0.2rem;
+  font-family: "medieval";
+  font-weight: bold;
+}
+
+.button-paiement {
+  backdrop-filter: blur(7px) saturate(181%);
+  -webkit-backdrop-filter: blur(7px) saturate(181%);
+  background-color: rgba(17, 25, 40, 0.5);
+  border-radius: 12px;
+  border: 1px solid white;
+  padding: 10px;
+  width: 200px;
+  color: white;
+  letter-spacing: 5px;
+  margin-top: 2rem;
+  font-family: "medieval";
+  font-weight: bold;
+  font-size: 1rem;
+  &:active {
+    box-shadow: inset -1px -1px #fff, inset 1px 1px #292929,
+      inset -2px -2px #ffffff, inset 2px 2px rgb(158, 158, 158);
+  }
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+  position: absolute;
+  top: 5px;
+  left: 25px;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: var(--third-color);
+  text-decoration: none;
+  cursor: pointer;
+}

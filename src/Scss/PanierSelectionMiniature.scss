@@ -1,0 +1,72 @@
+.selectionMiniature {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 80px;
+  justify-content: space-around;
+}
+.selectionMiniature img {
+  width: 100px;
+  height: 100px;
+}
+.selectionMiniature .text {
+  display: flex;
+  gap: 95px;
+  align-items: center;
+  text-shadow: 2px 2px 2px #0d0f12;
+  letter-spacing: 0.15rem;
+  box-shadow: 0px 0px 10px 4px #0d0f12;
+  border-radius: 10px;
+  padding: 10px;
+  width: 65%;
+  transition: 1.5s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: 1s;
+  }
+
+  .bourse {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+  }
+
+  .imgrat {
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
+  }
+}
+.selectionMiniature h3 {
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  font-size: 0.4em;
+  text-transform: uppercase;
+  margin: 0;
+  width: 100px;
+}
+.selectionMiniature h4 {
+  margin: 0;
+  font-size: 0.5em;
+}
+.selectionMiniature button {
+  backdrop-filter: blur(7px) saturate(181%);
+  -webkit-backdrop-filter: blur(7px) saturate(181%);
+  background-color: rgba(17, 25, 40, 0.5);
+  border-radius: 12px;
+  border: 1px solid white;
+  padding: 5px;
+  width: 200px;
+  color: white;
+  text-shadow: 2px 2px 2px #0d0f12;
+  letter-spacing: 0.15rem;
+  box-shadow: 2px 2px 2px black;
+  font-family: "medieval";
+  font-size: 1rem;
+  &:active {
+    box-shadow: inset -1px -1px #fff, inset 1px 1px #292929,
+      inset -2px -2px #ffffff, inset 2px 2px rgb(158, 158, 158);
+  }
+}

@@ -1,0 +1,35 @@
+.title-h1 {
+  padding-left: 9rem;
+  padding-bottom: 0;
+  font-family: "goudy";
+  font-weight: bold;
+  font-size: 9rem;
+  margin-bottom: 0;
+  margin-top: 10rem;
+  color: var(--second-color);
+  text-shadow: 3px 3px 2px #0d0f12, 0 0 0.2em orange;
+  transition: 2.5s;
+
+  &:hover {
+    text-shadow: 3px 3px 2px #0d0f12, 0 0 1em #28c342, 0 0 0.2em #0d0f12;
+    transition: 1.5s;
+  }
+}
+
+.title-para {
+  padding-left: 9rem;
+  max-width: 60%;
+  line-height: 1.8rem;
+  font-family: "kawoszeh";
+  font-weight: bold;
+  word-spacing: 0.3rem;
+  letter-spacing: 0.3rem;
+  font-size: 1.3rem;
+  color: var(--second-color);
+  text-shadow: 2px 2px 2px #0d0f12, 0 0 2rem orange, 0 0 0.2em #0d0f12;
+}
+
+.title-letter {
+  font-size: 3rem;
+  font-weight: bold;
+}
